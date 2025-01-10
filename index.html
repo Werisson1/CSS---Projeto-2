@@ -26,7 +26,10 @@
             font-size: 14px;
             line-height: 1.6;
             text-align: justify;
-            margin: 20px;
+            margin: 2 20px 20px 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         ul {
@@ -42,7 +45,7 @@
         img {
             width: 200px; 
             display: block; 
-            margin: 20px auto; 
+            margin: 10px; 
             border-radius: 10px;
         }
 
@@ -57,27 +60,50 @@
         #quadrado {
             width: 100%; 
             height: 150px; 
-            background-color: #d3d3d3; /* Cor cinza mais claro */
-            border: 2px solid #808080; /* Borda cinza mais escura */
+            background-color: #d3d3d3; 
+            border: 2px solid #808080; 
             margin-top: 0; 
             display: flex; 
             justify-content: center; 
             align-items: center; 
             text-align: center; 
-            color: #2e2e2e; /* Cor do texto dentro do quadrado */
+            color: #2e2e2e; 
+        }
+
+        .album-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 20px 0;
+            background-color: #808080;
+        }
+
+        .album-container img {
+            width: 200px;
+            height: auto;
+            
+        }
+
+        figure {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
         }
     </style>
 </head>
 <body>
     <header>
         <div id="quadrado">
-            <h1>Alex Turner</h1> <!-- Título dentro do quadrado -->
+            <h1>Alex Turner</h1> 
         </div>
     </header>
 
     <main>
         <section>
-            <p>Alexander David Turner, nascido em 5 de janeiro de 1986, é o fundador e atual vocalista da banda de indie rock Arctic Monkeys. Compositor e músico com uma grande inteligência (pode-se dizer até genialidade) lírica. A banda ganhou diversos prêmios BRIT de Melhor Grupo Britânico e Melhor Álbum Britânico em 2007, 2008 e 2014.</p>
+            <p>Alexander David Turner, nascido em 5 de janeiro de 1986, é o fundador e atual vocalista da banda de indie rock Arctic Monkeys. Compositor e músico com uma grande inteligência lírica, Alex se destacou desde o início com sua habilidade em criar letras profundas e originais. A banda ganhou diversos prêmios BRIT de Melhor Grupo Britânico e Melhor Álbum Britânico em 2007, 2008 e 2014, consolidando Alex como uma das figuras mais influentes da música contemporânea.</p>
         </section>
 
         <section>
@@ -98,9 +124,22 @@
             <ul>
                 <li><a href="https://www.instagram.com/arcticmonkeysitsmylove/">Arctic Monkeys It's My Love</a></li>
                 <li><a href="https://www.instagram.com/ghostc00kie/">Ghost Cookie</a></li>
+                <li><a href="https://arcticmonkeys.com/"> Arctic Monkeys</a></li>
             </ul>
         </nav>
     </main>
+
+    <h2>Álbum</h2>
+
+    <div class="album-container">
+        <img src="/CSS---Projeto-2/img/wpsiatwinpng.png" alt="Album 1">
+        <img src="/CSS---Projeto-2/img/arctic_monkeys_favourite_worst_nightmare_packshot.jpg" alt="Album 2">
+        <img src="/CSS---Projeto-2/img/arcticmonkeys_humbug.jpg" alt="Album 3">
+        <img src="/CSS---Projeto-2/img/Suck_It_And_See_(non_sticker).jpg" alt="Album 4">
+        <img src="/CSS---Projeto-2/img/am_am_final_packshot.jpg" alt="Album 5">
+        <img src="/CSS---Projeto-2/img/Tranquility_Base_Hotel_&_Casino_(AM).jpg" alt="Album 6">
+        <img src="/CSS---Projeto-2/img/thecar.jpg" alt="Album 7">
+    </div>
 
     <footer>
         <p>© 2025 - Página sobre Alex Turner. Todos os direitos reservados.</p>
